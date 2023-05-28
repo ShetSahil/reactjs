@@ -4,13 +4,19 @@ export default function TextForms(props) {
     const upHandle = ()=>{
         let mytext = text.toUpperCase();
         setText(mytext);
+        props.showAlert(" Converted to uppercase","success")
     }
     const downHandle = ()=>{
       let mytext = text.toLowerCase();
       setText(mytext);
+      props.showAlert(" Converted to lowerrcase","success")
+
   }
   const capHandle = ()=>{
     setText('');
+    props.showAlert(" Text field cleared","success")
+
+    
     
     
 }
